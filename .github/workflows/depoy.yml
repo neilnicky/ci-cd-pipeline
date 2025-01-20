@@ -28,6 +28,3 @@ jobs:
 
     - name: Verify Pushed Image
       run: docker pull neilnicks/100xdev-cicd-pipeline:latest  # Replace with your Docker Hub username and repository
-
-
-            
