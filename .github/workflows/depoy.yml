@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker pull 100xdevs/100xdev-cicd-pipeline:latest
+            sudo docker pull neilnicks/100xdev-cicd-pipeline:latest
             sudo docker stop 100xdev-cicd-pipeline || true
             sudo docker rm 100xdev-cicd-pipeline || true
-            sudo docker run -d --name 100xdev-cicd-pipeline -p 3005:3000 100xdevs/100xdev-cicd-pipeline:latest
+            sudo docker run -d --name 100xdev-cicd-pipeline -p 3005:3000 neilnicks/100xdev-cicd-pipeline:latest
